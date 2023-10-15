@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "jx9HTBlzEP6efscSBgzj7pHrKIKi30miTMvGBCODghEd3cDlNC9Q/XamWi+1hlMGI7a3RxWKrRh/BsZ4Npe5ZA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\ASPNetCoreWebAPI\\basics\\hello_world_api_ui\\hello_world_api_ui.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
