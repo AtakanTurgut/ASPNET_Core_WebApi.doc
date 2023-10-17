@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qYM7q38R+DJllCKxJQ2PGC5cSOf3HlkQNOCBMF1m8HGB3s22X11e6hleCA+r9eUVZrbbXx1KHGSqY8qNCZz1EA==",
+  "dgSpecHash": "v5mBtcJV4ycWhEnsJu4ocu1nEEg0ccbNljPUzIK9hL9TX3VKmsFM/cs3l21Ex58plm/Ym1Ge9vXej3YJl99nwA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\ASPNetCoreWebAPI\\basics\\hello_world_cli\\hello_world_cli.csproj",
+  "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\ASPNET_Core_WebApi\\basics\\hello_world_cli\\hello_world_cli.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.7\\microsoft.aspnetcore.openapi.7.0.7.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

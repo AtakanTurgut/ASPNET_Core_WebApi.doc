@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Excalibur\\Desktop\\ASPNetCoreWebAPI\\basics\\hello_world_cli\\hello_world_cli.csproj": {}
+    "C:\\Users\\Excalibur\\Desktop\\ASPNET_Core_WebApi\\basics\\hello_world_cli\\hello_world_cli.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Excalibur\\Desktop\\ASPNetCoreWebAPI\\basics\\hello_world_cli\\hello_world_cli.csproj": {
+    "C:\\Users\\Excalibur\\Desktop\\ASPNET_Core_WebApi\\basics\\hello_world_cli\\hello_world_cli.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Excalibur\\Desktop\\ASPNetCoreWebAPI\\basics\\hello_world_cli\\hello_world_cli.csproj",
+        "projectUniqueName": "C:\\Users\\Excalibur\\Desktop\\ASPNET_Core_WebApi\\basics\\hello_world_cli\\hello_world_cli.csproj",
         "projectName": "hello_world_cli",
-        "projectPath": "C:\\Users\\Excalibur\\Desktop\\ASPNetCoreWebAPI\\basics\\hello_world_cli\\hello_world_cli.csproj",
+        "projectPath": "C:\\Users\\Excalibur\\Desktop\\ASPNET_Core_WebApi\\basics\\hello_world_cli\\hello_world_cli.csproj",
         "packagesPath": "C:\\Users\\Excalibur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Excalibur\\Desktop\\ASPNetCoreWebAPI\\basics\\hello_world_cli\\obj\\",
+        "outputPath": "C:\\Users\\Excalibur\\Desktop\\ASPNET_Core_WebApi\\basics\\hello_world_cli\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

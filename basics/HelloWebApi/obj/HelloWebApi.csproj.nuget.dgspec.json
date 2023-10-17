@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Excalibur\\Desktop\\ASPNetCoreWebAPI\\basics\\HelloWebApi\\HelloWebApi.csproj": {}
+    "C:\\Users\\Excalibur\\Desktop\\ASPNET_Core_WebApi\\basics\\HelloWebApi\\HelloWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Excalibur\\Desktop\\ASPNetCoreWebAPI\\basics\\HelloWebApi\\HelloWebApi.csproj": {
+    "C:\\Users\\Excalibur\\Desktop\\ASPNET_Core_WebApi\\basics\\HelloWebApi\\HelloWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Excalibur\\Desktop\\ASPNetCoreWebAPI\\basics\\HelloWebApi\\HelloWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Excalibur\\Desktop\\ASPNET_Core_WebApi\\basics\\HelloWebApi\\HelloWebApi.csproj",
         "projectName": "HelloWebApi",
-        "projectPath": "C:\\Users\\Excalibur\\Desktop\\ASPNetCoreWebAPI\\basics\\HelloWebApi\\HelloWebApi.csproj",
+        "projectPath": "C:\\Users\\Excalibur\\Desktop\\ASPNET_Core_WebApi\\basics\\HelloWebApi\\HelloWebApi.csproj",
         "packagesPath": "C:\\Users\\Excalibur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Excalibur\\Desktop\\ASPNetCoreWebAPI\\basics\\HelloWebApi\\obj\\",
+        "outputPath": "C:\\Users\\Excalibur\\Desktop\\ASPNET_Core_WebApi\\basics\\HelloWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
