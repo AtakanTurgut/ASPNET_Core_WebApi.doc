@@ -14,7 +14,6 @@
 ```
     PM> Install-Package Microsoft.AspNetCore.Mvc.Core -ProjectName Presentation
 ```
-<br/>
 
 ### Migrations
 - [Microsoft.EntityFrameworkCore.Tools 6.0.23](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools)
