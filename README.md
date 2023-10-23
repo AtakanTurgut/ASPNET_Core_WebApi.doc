@@ -11,6 +11,7 @@
     PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 6.0.23 -ProjectName WebApi
 ```
 
+
 ### Migrations
 - [Microsoft.EntityFrameworkCore.Tools 6.0.23](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools)
 ```
