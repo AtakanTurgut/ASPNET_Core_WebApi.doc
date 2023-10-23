@@ -3,7 +3,7 @@
     Repositories => Entities
     Services     => Entities + Repositories
     Presentation => Services
-    WebApi => Entities + Repositories + Services + Presentation
+    WebApi       => Entities + Repositories + Services + Presentation
 
 ## Used Packages for Database Context
 
