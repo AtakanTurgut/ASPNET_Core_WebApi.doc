@@ -1,4 +1,4 @@
-### Project Layers
+### bsStoreApp Project Layers
     Entities
     Repositories => Entities
     Services     => Entities + Repositories
@@ -17,6 +17,7 @@
 ```
     PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 6.0.23 -ProjectName WebApi
 ```
+
 - To add a Controller feature to a class -> [Microsoft.AspNetCore.Mvc.Core 2.2.5](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Core)
 ```
     PM> Install-Package Microsoft.AspNetCore.Mvc.Core -ProjectName Presentation
@@ -46,7 +47,7 @@ Use this commands for the `Migration Operations`:
 ```
     PM> Remove-Migration
 ```
-- Drop the database:
+- Drop the Database
 ```
     PM> Drop-Database
 ```
