@@ -1,3 +1,10 @@
+### Project Layers
+    Entities
+    Repositories => Entities
+    Services     => Entities + Repositories
+    Presentation => Services
+    WebApi => Entities + Repositories + Services + Presentation
+
 ## Used Packages for Database Context
 
 - Packages can be installed from the "[NuGet Gallery](https://www.nuget.org/packages/Microsoft.AspNet.Identity.Core)" with the help of the `Tools > NuGet Package Manager > Package Manager Console`.
