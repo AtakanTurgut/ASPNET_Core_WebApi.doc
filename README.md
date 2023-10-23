@@ -20,6 +20,10 @@
 ```
     PM> Install-Package Microsoft.EntityFrameworkCore.Design -Version 6.0.23 -ProjectName WebApi
 ```
+- To add a Controller feature to a class -> [Microsoft.AspNetCore.Mvc.Core 2.2.5](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Core)
+```
+    PM> Install-Package Microsoft.AspNetCore.Mvc.Core -ProjectName Presentation
+```
 
 Use this commands for the `Migration Operations`:
 - Create Migration
@@ -33,6 +37,10 @@ Use this commands for the `Migration Operations`:
 - Remove Last Migration
 ```
     PM> Remove-Migration
+```
+- Drop the database:
+```
+    PM> Drop-Database
 ```
 
 ## Used Packages for PATCH Operation
