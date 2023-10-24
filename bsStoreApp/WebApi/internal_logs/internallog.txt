@@ -12,3 +12,35 @@
 2023-10-24 17:05:05.8189 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
 2023-10-24 17:05:05.8376 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Excalibur\Desktop\aspapi\ASPNET_Core_WebApi\bsStoreApp\WebApi\nlog.config
 2023-10-24 17:05:05.8533 Info Configuration initialized.
+2023-10-24 18:16:32.3523 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-24 18:16:32.4032 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-24 18:16:32.4363 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Excalibur\Desktop\aspapi\ASPNET_Core_WebApi\bsStoreApp\WebApi\nlog.config
+2023-10-24 18:16:32.4549 Info Configuration initialized.
+2023-10-24 18:17:55.1157 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-24 18:17:55.1627 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-24 18:17:55.2256 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Excalibur\Desktop\aspapi\ASPNET_Core_WebApi\bsStoreApp\WebApi\nlog.config
+2023-10-24 18:17:55.2967 Info Configuration initialized.
+2023-10-24 18:18:31.9785 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-24 18:18:31.9930 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-24 18:18:32.0060 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Excalibur\Desktop\aspapi\ASPNET_Core_WebApi\bsStoreApp\WebApi\nlog.config
+2023-10-24 18:18:32.0161 Info Configuration initialized.
+2023-10-24 18:43:34.7856 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-24 18:43:34.8107 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-24 18:43:34.8283 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Excalibur\Desktop\aspapi\ASPNET_Core_WebApi\bsStoreApp\WebApi\nlog.config
+2023-10-24 18:43:34.8438 Info Configuration initialized.
+2023-10-24 19:03:39.6869 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-24 19:03:39.7332 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-24 19:03:39.7549 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Excalibur\Desktop\aspapi\ASPNET_Core_WebApi\bsStoreApp\WebApi\nlog.config
+2023-10-24 19:03:39.7771 Info Configuration initialized.
+2023-10-24 19:04:37.1453 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-24 19:04:37.1781 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-24 19:04:37.1999 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Excalibur\Desktop\aspapi\ASPNET_Core_WebApi\bsStoreApp\WebApi\nlog.config
+2023-10-24 19:04:37.2133 Info Configuration initialized.
+2023-10-24 19:05:56.9266 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-24 19:05:56.9596 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-24 19:05:56.9814 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Excalibur\Desktop\aspapi\ASPNET_Core_WebApi\bsStoreApp\WebApi\nlog.config
+2023-10-24 19:05:56.9979 Info Configuration initialized.
+2023-10-24 19:06:04.0335 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-10-24 19:06:04.0469 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.5.2160. Product version: 5.2.5+7c014325443d65541200b698a50b9dd4ec30c7f0. GlobalAssemblyCache: False
+2023-10-24 19:06:04.0469 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Excalibur\Desktop\aspapi\ASPNET_Core_WebApi\bsStoreApp\WebApi\nlog.config
+2023-10-24 19:06:04.0666 Info Configuration initialized.
