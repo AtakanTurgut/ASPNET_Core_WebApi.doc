@@ -17,10 +17,21 @@
 ```
     PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 6.0.23 -ProjectName WebApi
 ```
+<br/>
 
 - To add a Controller feature to a class -> [Microsoft.AspNetCore.Mvc.Core 2.2.5](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Core)
 ```
     PM> Install-Package Microsoft.AspNetCore.Mvc.Core -ProjectName Presentation
+```
+- Service -> Open in Terminal : [NLog.Extensions.Logging 5.3.5](https://www.nuget.org/packages/NLog.Extensions.Logging/5.3.5)
+```
+    PS C:\ASPNET_Core_WebApi\bsStoreApp\Services> dotnet add package NLog.Extensions.Logging
+```
+
+<br/>
+- Logs can be accessed from this directory :
+```
+    C:\ASPNET_Core_WebApi\bsStoreApp\WebApi\bin\Debug\net6.0\logs
 ```
 
 ### Migrations

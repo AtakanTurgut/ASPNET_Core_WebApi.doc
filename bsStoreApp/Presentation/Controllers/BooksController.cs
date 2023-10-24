@@ -15,22 +15,6 @@ namespace Presentation.Controllers
     public class BooksController : ControllerBase
     {
         // Resolve
-        /*
-        private readonly RepositoryContext _context;
-
-        public BooksController(RepositoryContext context)
-        {
-            _context = context;
-        }
-            -------------------------------
-        private readonly IRepositoryManager _manager;
-
-        public BooksController(IRepositoryManager manager)
-        {
-            _manager = manager;
-        }
-        */
-
         private readonly IServiceManager _manager;
 
         public BooksController(IServiceManager manager)
@@ -44,9 +28,6 @@ namespace Presentation.Controllers
         {
             try
             {
-                //var books = _context.Books.ToList();
-                //var books = _manager.Book.GetAllBooks(false);
-
                 var books = _manager.BookService.GetAllBooks(false);
 
                 return Ok(books);
@@ -63,17 +44,6 @@ namespace Presentation.Controllers
             try
             {
                 // LINQ
-                /*
-                var book = _context
-                    .Books
-                    .Where(b => b.Id.Equals(id))
-                    .SingleOrDefault();
-                
-                var book = _manager
-                    .Book
-                    .GetOneBookById(id, false);
-                */
-
                 var book = _manager.BookService.GetOneBookById(id, false);
 
                 if (book is null)
@@ -96,14 +66,6 @@ namespace Presentation.Controllers
                 if (book is null)
                     return BadRequest();  // 400
 
-                /*
-                _context.Books.Add(book);
-                _context.SaveChanges();
-                
-                _manager.Book.CreateOneBook(book);
-                _manager.Save();
-                */
-
                 _manager.BookService.CreateOneBook(book);
 
                 return StatusCode(201, book);   // Created
@@ -124,31 +86,6 @@ namespace Presentation.Controllers
                     return BadRequest();  // 400
 
                 // check book ?
-                /*
-                var entity = _context
-                    .Books
-                    .Where(b => b.Id.Equals(id))
-                    .SingleOrDefault();
-                    -------------------------------
-                var entity = _manager
-                    .Book
-                    .GetOneBookById(id, true);
-
-                if (entity is null)
-                    return NotFound();  // 404
-
-                // check id
-                if (id != book.Id)
-                    return BadRequest();  // 400
-
-                entity.Title = book.Title;
-                entity.Price = book.Price;
-
-                //_context.SaveChanges();
-
-                _manager.Save();
-                */
-
                 _manager.BookService.UpdateOneBook(id, book, false);
 
                 //return Ok(book);
@@ -166,31 +103,6 @@ namespace Presentation.Controllers
         {
             try
             {
-                /*
-                var entity = _context
-                .Books
-                .Where(b => b.Id.Equals(id))
-                .SingleOrDefault();
-
-                var entity = _manager
-                    .Book
-                    .GetOneBookById(id, false);
-
-                if (entity is null)
-                    return NotFound(new
-                    {
-                        statusCode = 404,
-                        message = $"Book with id:{id} could not found."
-                    });  // 404
-                */
-                /*
-                _context.Books.Remove(entity);
-                _context.SaveChanges();
-
-                _manager.Book.Delete(entity);
-                _manager.Save();
-                */
-
                 _manager.BookService.DeleteOneBook(id, false);
 
                 return NoContent();  // 204
@@ -209,17 +121,6 @@ namespace Presentation.Controllers
             try
             {
                 // check book ?
-                /*
-                var entity = _context
-                    .Books
-                    .Where(b => b.Id.Equals(id))
-                    .SingleOrDefault();
-
-                var entity = _manager
-                    .Book
-                    .GetOneBookById(id, true);
-                */
-
                 var entity = _manager
                     .BookService
                     .GetOneBookById(id, true);
@@ -228,8 +129,6 @@ namespace Presentation.Controllers
                     return NotFound();  // 404
 
                 bookPatch.ApplyTo(entity);
-                //_context.SaveChanges();
-                //_manager.Book.Update(entity);
 
                 _manager.BookService.UpdateOneBook(id, entity, true);
 

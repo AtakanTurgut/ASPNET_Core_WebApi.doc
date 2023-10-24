@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj": {}
+    "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj": {
+    "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Excalibur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

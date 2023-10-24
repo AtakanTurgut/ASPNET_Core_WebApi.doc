@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LA2sL//xgwMhzrnSonTV+yhjuo+0fu/tX+ApSlxoocm5hKu3bnqJ+3qmKGpNOIOazQCZhpEue5Nobd3ZvQpyhQ==",
+  "dgSpecHash": "F694mAIgRluutchFquf25tDvDhWp8SytFnhK1QFnK98X/HkqccGGL5+CYS4nSh2bMg1iaSb7X2dA2c2NqPKQZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Repositories\\Repositories.csproj",
+  "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.23\\microsoft.entityframeworkcore.6.0.23.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.23\\microsoft.entityframeworkcore.abstractions.6.0.23.nupkg.sha512",

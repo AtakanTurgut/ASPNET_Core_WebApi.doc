@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xVemATMkz9KhIKVa5qEUQ6gLbEEt8hsp4DZ4a2hk9vNhxJWzcN6QY4IZUUUpCz9S9VIHrEqW+Oko5ucb+DxBfA==",
+  "dgSpecHash": "/jJXyyKJwQBQ1ffisIZkRYqjXxpkLYWAYPVmLoRfaqs/KNbVq4VK6o8yzfyzyl3c3eiwVK2bqk6eePytPgU2ag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

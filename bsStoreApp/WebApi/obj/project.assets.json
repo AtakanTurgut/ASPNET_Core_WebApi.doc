@@ -998,6 +998,37 @@
           }
         }
       },
+      "NLog/5.2.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/5.3.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging": "6.0.0",
+          "NLog": "5.2.5"
+        },
+        "compile": {
+          "lib/net6.0/NLog.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/NLog.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "runtime.native.System/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -1864,6 +1895,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Entities": "1.0.0",
+          "NLog.Extensions.Logging": "5.3.5",
           "Repositories": "1.0.0"
         },
         "compile": {
@@ -3042,6 +3074,55 @@
         "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.2.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "NLog/5.2.5": {
+      "sha512": "mMXtbAxfNzqkXcBjhJ3wN3rH7kwUZ0JL0GrUBI/lso7+tQ/HC4e5SnlmR3R5qQ9zWbqMbjxeH37rIf0yQGWTiA==",
+      "type": "package",
+      "path": "nlog/5.2.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "nlog.5.2.5.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "NLog.Extensions.Logging/5.3.5": {
+      "sha512": "7XDC0J2gNTphPmYRJMZeXFhB9fONgF6SVVRw/UKVPaesekCg/i9EL67p7x9fnf7IRD/Yq5btAl3Rae1WUeIDhA==",
+      "type": "package",
+      "path": "nlog.extensions.logging/5.3.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "README.md",
+        "lib/net461/NLog.Extensions.Logging.dll",
+        "lib/net461/NLog.Extensions.Logging.xml",
+        "lib/net6.0/NLog.Extensions.Logging.dll",
+        "lib/net6.0/NLog.Extensions.Logging.xml",
+        "lib/netstandard1.3/NLog.Extensions.Logging.dll",
+        "lib/netstandard1.3/NLog.Extensions.Logging.xml",
+        "lib/netstandard1.5/NLog.Extensions.Logging.dll",
+        "lib/netstandard1.5/NLog.Extensions.Logging.xml",
+        "lib/netstandard2.0/NLog.Extensions.Logging.dll",
+        "lib/netstandard2.0/NLog.Extensions.Logging.xml",
+        "lib/netstandard2.1/NLog.Extensions.Logging.dll",
+        "lib/netstandard2.1/NLog.Extensions.Logging.xml",
+        "nlog.extensions.logging.5.3.5.nupkg.sha512",
+        "nlog.extensions.logging.nuspec"
       ]
     },
     "runtime.native.System/4.0.0": {
@@ -5386,11 +5467,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\WebApi\\WebApi.csproj",
+      "projectPath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\Excalibur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\WebApi\\obj\\",
+      "outputPath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5412,17 +5493,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj"
+            "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Entities\\Entities.csproj"
             },
-            "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Presentation\\Presentation.csproj": {
-              "projectPath": "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Presentation\\Presentation.csproj"
+            "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Presentation\\Presentation.csproj": {
+              "projectPath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Presentation\\Presentation.csproj"
             },
-            "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Repositories\\Repositories.csproj": {
-              "projectPath": "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Repositories\\Repositories.csproj"
+            "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Repositories\\Repositories.csproj"
             },
-            "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\Excalibur\\Desktop\\Yeni klasör\\ASPNET_Core_WebApi\\bsStoreApp\\Services\\Services.csproj"
+            "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Services\\Services.csproj"
             }
           }
         }
