@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Mhi9jFUJ6yFAkYK+osOAB26Bq55RwTXfr5SgoCvnLqp/b0wjl04OoEeHF+DWNY9/8MC+uEDQcp7uM1YB1A1ZKA==",
+  "dgSpecHash": "nhstQ4PuI5pkVSVsCMXug0d3lHuiCAEz8UOq8WwQJHJTWx65eD6i/lSAqKZzHaFETgHD/CIh2crfjafzpnkSqQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Excalibur\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

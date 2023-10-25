@@ -64,6 +64,12 @@ Use this commands for the `Migration Operations`:
     PM> Drop-Database
 ```
 
+## Used Packages for Automapper
+- [AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1](https://www.nuget.org/packages/AutoMapper.Extensions.Microsoft.DependencyInjection)
+```
+PM> Install-Package AutoMapper.Extensions.Microsoft.DependencyInjection -ProjectName Services
+```
+
 ## Used Packages for PATCH Operation
 - [Microsoft.AspNetCore.Mvc.NewtonsoftJson 6.0.23](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/7.0.12)
 ```

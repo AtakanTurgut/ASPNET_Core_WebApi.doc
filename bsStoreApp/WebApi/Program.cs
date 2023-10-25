@@ -6,14 +6,14 @@ using WebApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));   ///
+LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));   /// Logger
 
 // Add services to the container.
 builder.Services.AddControllers()   //
     .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)    //
     .AddNewtonsoftJson();
 
-builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddEndpointsApiExplorer();     // Swagger
 builder.Services.AddSwaggerGen();
 
 // DBContext  - Register  //
@@ -27,11 +27,13 @@ builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 
-builder.Services.ConfigureLoggerService();
+builder.Services.ConfigureLoggerService();  // Logger
+
+builder.Services.AddAutoMapper(typeof(Program));    // Automapper
 
 var app = builder.Build();
 
-var logger = app.Services.GetRequiredService<ILoggerService>(); //
+var logger = app.Services.GetRequiredService<ILoggerService>(); // Logger
 app.ConfigureExceptionHandler(logger);
 
 // Configure the HTTP request pipeline.
