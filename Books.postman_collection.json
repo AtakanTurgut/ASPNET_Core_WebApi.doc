@@ -22,9 +22,38 @@
 					}
 				}
 			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/csv",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "text/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
 				"url": {
 					"raw": "{{baseUrl}}/api/books",
 					"host": [
@@ -54,9 +83,20 @@
 					}
 				}
 			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "{{baseUrl}}/api/books/{{bookId}}",
 					"host": [
@@ -281,7 +321,7 @@
 	"variable": [
 		{
 			"key": "bookId",
-			"value": "5"
+			"value": "2"
 		}
 	]
 }
