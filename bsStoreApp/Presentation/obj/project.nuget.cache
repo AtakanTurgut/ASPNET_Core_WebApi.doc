@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pyHGmxySI8+1o7Ec5+Wh/otv2XlaMuU+IurRz+ofe5VQcA6ZLKPsskO8on/Grh0m5uHzpp+CCI69UYRBM+XwHg==",
+  "dgSpecHash": "4ohp9M+N+jeAUXvZ2HMrhzpSiaUDfFqpl8Cn/aoz1DSACcGEUv4LRQvYnaiSa4ujUGsZ/z3AdY3DulfXAVz7Aw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.23\\microsoft.aspnetcore.jsonpatch.6.0.23.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.2.5\\microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.23\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.23.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.responsecaching.abstractions\\2.2.0\\microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.routing\\2.2.0\\microsoft.aspnetcore.routing.2.2.0.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
@@ -45,6 +46,7 @@
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\nlog\\5.2.5\\nlog.5.2.5.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\nlog.extensions.logging\\5.3.5\\nlog.extensions.logging.5.3.5.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",

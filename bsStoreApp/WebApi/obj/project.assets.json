@@ -1896,6 +1896,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "6.0.23",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.23",
           "Services": "1.0.0"
         },
         "compile": {
@@ -5508,7 +5509,6 @@
     "net6.0": [
       "Entities >= 1.0.0",
       "Microsoft.AspNetCore.JsonPatch >= 6.0.23",
-      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.23",
       "Microsoft.EntityFrameworkCore >= 6.0.23",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.23",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.23",
@@ -5578,10 +5578,6 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": {
-            "target": "Package",
-            "version": "[6.0.23, )"
-          },
-          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
             "version": "[6.0.23, )"
           },

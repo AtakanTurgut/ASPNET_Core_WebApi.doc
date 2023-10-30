@@ -33,7 +33,8 @@
 					{
 						"key": "Accept",
 						"value": "text/csv",
-						"type": "text"
+						"type": "text",
+						"disabled": true
 					},
 					{
 						"key": "Accept",
@@ -44,8 +45,7 @@
 					{
 						"key": "Accept",
 						"value": "application/json",
-						"type": "text",
-						"disabled": true
+						"type": "text"
 					},
 					{
 						"key": "Accept",
@@ -94,6 +94,12 @@
 					{
 						"key": "Accept",
 						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
 						"type": "text"
 					}
 				],
@@ -190,12 +196,74 @@
 					}
 				}
 			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "/*\r\n{\r\n    \"title\": \"ASP.NET Core MVC\",\r\n    \"price\": 200\r\n}\r\n*/\r\n\r\n{\r\n    \"title\": \"{{$randomWords}}\",\r\n    \"price\": {{$randomPrice}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/books",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "One Book with Invalid Object",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 400 or 422\", () => {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([400, 422])\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"B\",\r\n    \"price\": 1001\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -257,6 +325,58 @@
 			"response": []
 		},
 		{
+			"name": "One Book  with Invalid Object",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 204, 400 or 422\", () => {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([204, 400, 422])\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": {{bookId}},\r\n    \"title\": \"C\",\r\n    \"price\": 1500\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/books/{{bookId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"{{bookId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "One Book",
 			"event": [
 				{
@@ -277,6 +397,58 @@
 				"body": {
 					"mode": "raw",
 					"raw": "/*\r\n[\r\n  {\r\n    \"op\":\"replace\",\r\n    \"path\": \"title\",\r\n    \"value\": \"Javascript\"\r\n  }\r\n]\r\n*/\r\n\r\n[\r\n  {\r\n    \"op\":\"replace\",\r\n    \"path\": \"title\",\r\n    \"value\": \"{{$randomWords}}\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/books/{{bookId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"{{bookId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "One Book with Invalid Object",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 400 or 422\", () => {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([400, 422])\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"op\":\"replace\",\r\n    \"path\": \"title\",\r\n    \"value\": \"A\"\r\n  }\r\n]",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -321,7 +493,7 @@
 	"variable": [
 		{
 			"key": "bookId",
-			"value": "2"
+			"value": "1"
 		}
 	]
 }
