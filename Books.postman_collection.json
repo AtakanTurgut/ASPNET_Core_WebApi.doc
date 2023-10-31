@@ -140,6 +140,88 @@
 			"response": []
 		},
 		{
+			"name": "All Books with Filtering",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 200\", function() {\r",
+							"    pm.response.to.have.status(200)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/csv",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "text/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/books?pageNumber=1&pageSize=5&minPrice=300&maxPrice=500",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "1",
+							"description": "2"
+						},
+						{
+							"key": "pageSize",
+							"value": "5",
+							"description": "3"
+						},
+						{
+							"key": "minPrice",
+							"value": "300",
+							"description": "400"
+						},
+						{
+							"key": "maxPrice",
+							"value": "500",
+							"description": "300"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "One Book",
 			"event": [
 				{
