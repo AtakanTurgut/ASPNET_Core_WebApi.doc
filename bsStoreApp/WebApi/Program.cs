@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NLog;
+using Presentation.ActionFilters;
 using Repositories.EFCore;
 using Services.Contracts;
 using WebApi.Extensions;
@@ -20,6 +21,9 @@ builder.Services.AddControllers(config =>
     .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)    //
     .AddNewtonsoftJson();
 
+//builder.Services.AddScoped<ValidationFilterAttribute>();    // Action Filters  --  IoC
+
+
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
@@ -28,7 +32,7 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 builder.Services.AddEndpointsApiExplorer();     // Swagger
 builder.Services.AddSwaggerGen();
 
-// DBContext  - Register  //
+// DBContext  - Register //
 /*
 builder.Services.AddDbContext<RepositoryContext>(
         options => options.UseSqlServer(builder.Configuration.GetConnectionString("sqlConnection"))
@@ -39,9 +43,11 @@ builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 
-builder.Services.ConfigureLoggerService();  // Logger
+builder.Services.ConfigureLoggerService();   // Logger
 
 builder.Services.AddAutoMapper(typeof(Program));    // Automapper
+
+builder.Services.ConfigureActionFilters();   // Action Filters 
 
 var app = builder.Build();
 
@@ -64,6 +70,6 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllers();    // Automapper
 
 app.Run();

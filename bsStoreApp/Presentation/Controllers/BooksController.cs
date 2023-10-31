@@ -3,9 +3,12 @@ using Entities.Exceptions;
 using Entities.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using NLog.Filters;
+using Presentation.ActionFilters;
 using Services.Contracts;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +17,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("api/books")]
+    [ServiceFilter(typeof(LogFilterAttribute))]
     public class BooksController : ControllerBase
     {
         // Resolve
@@ -44,13 +48,16 @@ namespace Presentation.Controllers
 
         // POST
         [HttpPost]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<IActionResult> CreateOneBookAsync([FromBody] BookDtoForInsertion bookDto)
         {
+            /*
             if (bookDto is null)
                 return BadRequest();  // 400
 
             if (!ModelState.IsValid)
-                return UnprocessableEntity(ModelState);
+                return UnprocessableEntity(ModelState);     // 422
+            */
 
             var book = await _manager.BookService.CreateOneBookAsync(bookDto);
 
@@ -59,13 +66,16 @@ namespace Presentation.Controllers
 
         // PUT
         [HttpPut("{id:int}")]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]      // (..., Order = )
         public async Task<IActionResult> UpdateOneBookAsync([FromRoute(Name = "id")] int id, [FromBody] BookDtoForUpdate bookDto)
         {
+            /*
             if (bookDto is null)
                 return BadRequest();  // 400
 
             if (!ModelState.IsValid)
-                return UnprocessableEntity(ModelState);
+                return UnprocessableEntity(ModelState); // 422
+            */
 
             await _manager.BookService.UpdateOneBookAsync(id, bookDto, false);
 
