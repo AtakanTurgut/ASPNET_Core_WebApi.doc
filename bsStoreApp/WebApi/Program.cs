@@ -49,6 +49,8 @@ builder.Services.AddAutoMapper(typeof(Program));    // Automapper
 
 builder.Services.ConfigureActionFilters();   // Action Filters 
 
+builder.Services.ConfigureCors();   // Pagination
+
 var app = builder.Build();
 
 var logger = app.Services.GetRequiredService<ILoggerService>(); // Logger
@@ -67,6 +69,8 @@ if (app.Environment.IsProduction())   //
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("CorsPolicy");   // Pagination
 
 app.UseAuthorization();
 
