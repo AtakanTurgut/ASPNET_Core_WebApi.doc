@@ -67,13 +67,13 @@ Use this commands for the `Migration Operations`:
 ## Used Packages for Automapper
 - [AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1](https://www.nuget.org/packages/AutoMapper.Extensions.Microsoft.DependencyInjection)
 ```
-PM> Install-Package AutoMapper.Extensions.Microsoft.DependencyInjection -ProjectName Services
+    PM> Install-Package AutoMapper.Extensions.Microsoft.DependencyInjection -ProjectName Services
 ```
 
 ## Used Packages for Sorting
 - [System.Linq.Dynamic.Core 1.3.5](https://www.nuget.org/packages/System.Linq.Dynamic.Core)
 ```
-PM> Install-Package System.Linq.Dynamic.Core -ProjectName Repositories
+    PM> Install-Package System.Linq.Dynamic.Core -ProjectName Repositories
 ```
 
 ## Used Packages for PATCH Operation
