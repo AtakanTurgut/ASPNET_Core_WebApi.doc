@@ -311,6 +311,133 @@
 			"response": []
 		},
 		{
+			"name": "All Books with Order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 200\", function() {\r",
+							"    pm.response.to.have.status(200)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/csv",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "text/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/books?pageNumber=1&pageSize=10&minPrice=10&maxPrice=500&orderBy=id desc&orderBy=price&orderBy=title desc",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "1",
+							"description": "2"
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"description": "3"
+						},
+						{
+							"key": "minPrice",
+							"value": "10",
+							"description": "400"
+						},
+						{
+							"key": "maxPrice",
+							"value": "500",
+							"description": "300"
+						},
+						{
+							"key": "searchTerm",
+							"value": "voice",
+							"description": "soft",
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": "id",
+							"description": "id az-asc",
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": "id desc",
+							"description": "id za"
+						},
+						{
+							"key": "orderBy",
+							"value": "price",
+							"description": "price az-asc"
+						},
+						{
+							"key": "orderBy",
+							"value": "price desc",
+							"description": "price za",
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": "title",
+							"description": "title az-asc",
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": "title desc",
+							"description": "title za"
+						},
+						{
+							"key": "orderBy",
+							"value": "price, title desc, id desc",
+							"description": "price asc, title desc, id desc",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "One Book",
 			"event": [
 				{

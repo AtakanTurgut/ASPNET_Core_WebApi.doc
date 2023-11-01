@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FSI6d1w3osW24xQf1XsDSftNfLq27Egsuy+7ymhpe8BHORwTxpJoQtwFJlyOAWd6mUbmefn+5Fcjtr8xSxDbFg==",
+  "dgSpecHash": "oyVadRonIGwhxwpq+Lrq9sCJxA9H/bYCzy0wgGRospj7M9+t2ckHQkLA/5vBJiCcG+TBfy24qu8OiW0wJ09L0w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\Excalibur\\.nuget\\packages\\nlog.extensions.logging\\5.3.5\\nlog.extensions.logging.5.3.5.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\system.linq.dynamic.core\\1.3.5\\system.linq.dynamic.core.1.3.5.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
