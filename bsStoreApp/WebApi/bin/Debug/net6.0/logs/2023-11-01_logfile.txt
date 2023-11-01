@@ -1,0 +1,4 @@
+2023-11-01 12:13:49.2260 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-01T09:13:49.1914163Z"}
+2023-11-01 12:14:27.8539 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-01T09:14:27.8539146Z"}
+2023-11-01 12:14:46.1987 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-01T09:14:46.1986989Z"}
+2023-11-01 12:15:00.8227 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-01T09:15:00.8227402Z"}
