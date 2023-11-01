@@ -51,6 +51,8 @@ builder.Services.ConfigureActionFilters();   // Action Filters
 
 builder.Services.ConfigureCors();   // Pagination
 
+builder.Services.ConfigureDataShaper();     // Data Shaping
+
 var app = builder.Build();
 
 var logger = app.Services.GetRequiredService<ILoggerService>(); // Logger
