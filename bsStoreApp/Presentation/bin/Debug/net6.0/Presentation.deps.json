@@ -11,6 +11,7 @@
           "Microsoft.AspNetCore.JsonPatch": "6.0.23",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.23",
+          "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
           "Services": "1.0.0"
         },
         "runtime": {
@@ -154,6 +155,14 @@
           "lib/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
             "assemblyVersion": "6.0.23.0",
             "fileVersion": "6.0.2323.48007"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Versioning/5.1.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.8270.41513"
           }
         }
       },
@@ -779,6 +788,13 @@
       "sha512": "sha512-bNde+dtBk/Ymj6v0cuKHSfDQl140KtB3tfbbMt5N5cdlySRYAORMf4ItKnrDDPK/V9zDgUlpfw65gEtUeBsbDA==",
       "path": "microsoft.aspnetcore.mvc.newtonsoftjson/6.0.23",
       "hashPath": "microsoft.aspnetcore.mvc.newtonsoftjson.6.0.23.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UX8w9BlCiZpr6Ox4YAve1w0CkI1CAovukGNzKd7v0+5pZc8lzuG5tRovucr1RWIKHs0E/Yx8563CN7KzaB3bpw==",
+      "path": "microsoft.aspnetcore.mvc.versioning/5.1.0",
+      "hashPath": "microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.2.0": {
       "type": "package",

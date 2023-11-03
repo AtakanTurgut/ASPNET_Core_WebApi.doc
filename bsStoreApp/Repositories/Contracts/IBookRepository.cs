@@ -13,6 +13,7 @@ namespace Repositories.Contracts
             // name + Async -> Task<T> -> (implementation) public async Task<T> ... -> await - ...Async();
         //Task<IEnumerable<Book>> GetAllBooksAsync(BookParameters bookParameters, bool trackChanges);
         Task<PagedList<Book>> GetAllBooksAsync(BookParameters bookParameters, bool trackChanges);
+        Task<List<Book>> GetAllBooksAsync(bool trackChanges);
         Task<Book> GetOneBookByIdAsync(int id, bool trackChanges);
 
         void CreateOneBook(Book book);

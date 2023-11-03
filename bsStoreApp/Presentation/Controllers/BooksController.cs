@@ -17,8 +17,10 @@ using System.Threading.Tasks;
 
 namespace Presentation.Controllers
 {
+    //[ApiVersion("1.0")]     // Versioning    -   Conventions
     [ApiController]
     [Route("api/books")]
+    //[Route("api/{v:apiversion}/books")]
     [ServiceFilter(typeof(LogFilterAttribute))]
     public class BooksController : ControllerBase
     {

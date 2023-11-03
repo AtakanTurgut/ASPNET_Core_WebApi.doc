@@ -56,6 +56,8 @@ builder.Services.ConfigureDataShaper();     // Data Shaping
 builder.Services.AddCustomMediaTypes();     // Hateoas  -  Root Documentation
 builder.Services.AddScoped<IBookLinks, BookLinks>();
 
+builder.Services.ConfigureVersioning();     // Versioning
+
 var app = builder.Build();
 
 var logger = app.Services.GetRequiredService<ILoggerService>(); // Logger
