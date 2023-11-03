@@ -53,7 +53,7 @@ builder.Services.ConfigureCors();   // Pagination
 
 builder.Services.ConfigureDataShaper();     // Data Shaping
 
-builder.Services.AddCustomMediaTypes();     // Hateoas
+builder.Services.AddCustomMediaTypes();     // Hateoas  -  Root Documentation
 builder.Services.AddScoped<IBookLinks, BookLinks>();
 
 var app = builder.Build();

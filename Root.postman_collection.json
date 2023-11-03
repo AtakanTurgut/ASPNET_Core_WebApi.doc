@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "da2209ab-f848-4f41-9bad-de84d91b6a92",
+		"name": "Root",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27907837",
+		"_collection_link": "https://solar-firefly-811735.postman.co/workspace/ASP.NET-Core-Web-API~9ce5536b-0785-414d-ab97-5f2f9d772300/collection/27907837-da2209ab-f848-4f41-9bad-de84d91b6a92?action=share&source=collection_link&creator=27907837"
+	},
+	"item": [
+		{
+			"name": "Root",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.atakanturgut.apiroot+json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.atakanturgut.apiroot+xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

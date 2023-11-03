@@ -73,6 +73,9 @@ namespace WebApi.Extensions
                 {
                     systemTextJsonOutputFormatter.SupportedMediaTypes
                         .Add("application/vnd.atakanturgut.hateoas+json");
+
+                    systemTextJsonOutputFormatter.SupportedMediaTypes
+                        .Add("application/vnd.atakanturgut.apiroot+json");
                 }
 
                 var xmlOutputFormatter = config
@@ -83,6 +86,9 @@ namespace WebApi.Extensions
                 {
                     xmlOutputFormatter.SupportedMediaTypes
                         .Add("application/vnd.atakanturgut.hateoas+xml");
+
+                    xmlOutputFormatter.SupportedMediaTypes
+                        .Add("application/vnd.atakanturgut.apiroot+xml");
                 }
             });
         }
