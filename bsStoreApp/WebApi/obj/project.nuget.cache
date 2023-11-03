@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "fPasbhDa/AOWivB7GepmlLGPX/ZyssDzS4Y9oBsB2i+cTjM7eujBZupHA8kkazQZPOTVAXn6wc4WI7XpwkrQBg==",
+  "dgSpecHash": "fAcZfNuE6TiOPPJNK+UoNW3IAHWIW13iqVQwZPzIUiYB1J3JOSHq5XdFBwKnMXwpU/KwkfLZINhGy1ln1ZRBtg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\aspapi\\ASPNET_Core_WebApi\\bsStoreApp\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Excalibur\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\marvin.cache.headers\\6.0.0\\marvin.cache.headers.6.0.0.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",

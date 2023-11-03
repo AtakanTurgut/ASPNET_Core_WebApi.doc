@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "ae059366-c83b-4d4e-b788-84b986354ed5",
 		"name": "Books",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "27907837",
 		"_collection_link": "https://solar-firefly-811735.postman.co/workspace/ASP.NET-Core-Web-API~9ce5536b-0785-414d-ab97-5f2f9d772300/collection/27907837-ae059366-c83b-4d4e-b788-84b986354ed5?action=share&source=collection_link&creator=27907837"
 	},
@@ -54,16 +54,7 @@
 						"disabled": true
 					}
 				],
-				"url": {
-					"raw": "{{baseUrl}}/api/books",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"books"
-					]
-				}
+				"url": "{{baseUrl}}/api/books"
 			},
 			"response": []
 		},
@@ -766,6 +757,85 @@
 			"response": []
 		},
 		{
+			"name": "All Books with Caching",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 200\", function() {\r",
+							"    pm.response.to.have.status(200)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/csv",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "text/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "If-None-Match",
+						"value": "61B1007B16D1DDC0CCF5BA83BB0ED606",
+						"description": "ETag",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/books?pageNumber=11&pageSize=10",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "11",
+							"description": "2"
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"description": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "One Book",
 			"event": [
 				{
@@ -801,17 +871,7 @@
 						"type": "text"
 					}
 				],
-				"url": {
-					"raw": "{{baseUrl}}/api/books/{{bookId}}",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"books",
-						"{{bookId}}"
-					]
-				}
+				"url": "{{baseUrl}}/api/books/{{bookId}}"
 			},
 			"response": []
 		},
@@ -833,17 +893,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "{{baseUrl}}/api/books/10000",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"books",
-						"10000"
-					]
-				}
+				"url": "{{baseUrl}}/api/books/10000"
 			},
 			"response": []
 		},
@@ -865,17 +915,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": {
-					"raw": "{{baseUrl}}/api/books/{{bookId}}",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"books",
-						"{{bookId}}"
-					]
-				}
+				"url": "{{baseUrl}}/api/books/{{bookId}}"
 			},
 			"response": []
 		},
@@ -897,17 +937,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": {
-					"raw": "{{baseUrl}}/api/books/1000",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"books",
-						"1000"
-					]
-				}
+				"url": "{{baseUrl}}/api/books/1000"
 			},
 			"response": []
 		},
@@ -949,16 +979,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{baseUrl}}/api/books",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"books"
-					]
-				}
+				"url": "{{baseUrl}}/api/books"
 			},
 			"response": []
 		},
@@ -1000,16 +1021,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{baseUrl}}/api/books",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"books"
-					]
-				}
+				"url": "{{baseUrl}}/api/books"
 			},
 			"response": []
 		},
@@ -1040,17 +1052,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{baseUrl}}/api/books/{{bookId}}",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"books",
-						"{{bookId}}"
-					]
-				}
+				"url": "{{baseUrl}}/api/books/{{bookId}}"
 			},
 			"response": []
 		},
@@ -1092,17 +1094,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{baseUrl}}/api/books/{{bookId}}",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"books",
-						"{{bookId}}"
-					]
-				}
+				"url": "{{baseUrl}}/api/books/{{bookId}}"
 			},
 			"response": []
 		},
@@ -1133,17 +1125,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{baseUrl}}/api/books/{{bookId}}",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"books",
-						"{{bookId}}"
-					]
-				}
+				"url": "{{baseUrl}}/api/books/{{bookId}}"
 			},
 			"response": []
 		},
@@ -1185,17 +1167,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{baseUrl}}/api/books/{{bookId}}",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"books",
-						"{{bookId}}"
-					]
-				}
+				"url": "{{baseUrl}}/api/books/{{bookId}}"
 			},
 			"response": []
 		},
@@ -1246,16 +1218,7 @@
 						"disabled": true
 					}
 				],
-				"url": {
-					"raw": "{{baseUrl}}/api/books",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"books"
-					]
-				}
+				"url": "{{baseUrl}}/api/books"
 			},
 			"response": []
 		},

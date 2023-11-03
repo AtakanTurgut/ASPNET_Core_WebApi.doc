@@ -16,6 +16,8 @@ builder.Services.AddControllers(config =>
 {
     config.RespectBrowserAcceptHeader = true;   // Content Negotiation
     config.ReturnHttpNotAcceptable = true;
+
+    config.CacheProfiles.Add("5mins", new CacheProfile() { Duration = 300 });   // 300 sn   -   Caching
 })
     .AddXmlDataContractSerializerFormatters()       // Content Negotiation
     .AddCustomCsvFormatter()
@@ -58,6 +60,9 @@ builder.Services.AddScoped<IBookLinks, BookLinks>();
 
 builder.Services.ConfigureVersioning();     // Versioning
 
+builder.Services.ConfigureResponseCaching();    // Caching
+builder.Services.ConfigureHttpCacheHeaders();
+
 var app = builder.Build();
 
 var logger = app.Services.GetRequiredService<ILoggerService>(); // Logger
@@ -78,6 +83,9 @@ if (app.Environment.IsProduction())   //
 app.UseHttpsRedirection();
 
 app.UseCors("CorsPolicy");   // Pagination
+
+app.UseResponseCaching();    // Caching
+app.UseHttpCacheHeaders();
 
 app.UseAuthorization();
 

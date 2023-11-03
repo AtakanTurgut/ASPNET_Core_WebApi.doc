@@ -2,6 +2,7 @@
 using Entities.Exceptions;
 using Entities.Models;
 using Entities.RequestFeatures;
+using Marvin.Cache.Headers;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using NLog.Filters;
@@ -22,6 +23,8 @@ namespace Presentation.Controllers
     [Route("api/books")]
     //[Route("api/{v:apiversion}/books")]
     [ServiceFilter(typeof(LogFilterAttribute))]
+    //[ResponseCache(CacheProfileName = "5mins")]     // Cacheable
+    //[HttpCacheExpiration(CacheLocation = CacheLocation.Public, MaxAge = 80)]
     public class BooksController : ControllerBase
     {
         // Resolve
@@ -37,6 +40,7 @@ namespace Presentation.Controllers
         [HttpGet(Name = "GetAllBooksAsync")]
         [HttpHead]
         [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
+        //[ResponseCache(Duration = 60)]      // Cacheable
         public async Task<IActionResult> GetAllBooksAsync([FromQuery] BookParameters bookParameters)
         {
             var linkParameters = new LinkParameters()
@@ -49,7 +53,7 @@ namespace Presentation.Controllers
 
             Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(result.metaData));
 
-            return result.linkResponse.HasLinks ? 
+            return result.linkResponse.HasLinks ?
                 Ok(result.linkResponse.LinkedEntities) :
                 Ok(result.linkResponse.ShapedEntities);
         }
@@ -115,7 +119,7 @@ namespace Presentation.Controllers
         }
 
         // OPTIONS
-        [HttpOptions]   
+        [HttpOptions]
         public IActionResult GetBooksOptions()
         {
             Response.Headers.Add("Allow", "GET, PUT, POST, PATCH, DELETE, HEAD, OPTIONS"); // (Key, Value)

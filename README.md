@@ -88,6 +88,12 @@ Use this commands for the `Migration Operations`:
     PM> Install-Package Microsoft.AspNetCore.Mvc.Versioning -ProjectName Presentation -Version 5.1.0
 ```
 
+## Used Packages for Caching
+- [Marvin.Cache.Headers 6.0.0](https://www.nuget.org/packages/Marvin.Cache.Headers)
+```
+    PM> Install-Package Marvin.Cache.Headers -ProjectName Presentation -Version 6.0.0
+```
+
 ## Used Packages for PATCH Operation
 - [Microsoft.AspNetCore.Mvc.NewtonsoftJson 6.0.23](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/7.0.12)
 ```
