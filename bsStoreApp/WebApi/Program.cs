@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using NLog;
 using Presentation.ActionFilters;
 using Repositories.EFCore;
+using Services;
 using Services.Contracts;
 using WebApi.Extensions;
 
@@ -16,13 +17,12 @@ builder.Services.AddControllers(config =>
     config.RespectBrowserAcceptHeader = true;   // Content Negotiation
     config.ReturnHttpNotAcceptable = true;
 })
-    .AddCustomCsvFormatter()
     .AddXmlDataContractSerializerFormatters()       // Content Negotiation
-    .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)    //
-    .AddNewtonsoftJson();
+    .AddCustomCsvFormatter()
+    .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);    //
+    //.AddNewtonsoftJson();
 
 //builder.Services.AddScoped<ValidationFilterAttribute>();    // Action Filters  --  IoC
-
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
@@ -52,6 +52,9 @@ builder.Services.ConfigureActionFilters();   // Action Filters
 builder.Services.ConfigureCors();   // Pagination
 
 builder.Services.ConfigureDataShaper();     // Data Shaping
+
+builder.Services.AddCustomMediaTypes();     // Hateoas
+builder.Services.AddScoped<IBookLinks, BookLinks>();
 
 var app = builder.Build();
 

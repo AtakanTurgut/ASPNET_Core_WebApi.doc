@@ -76,6 +76,12 @@ Use this commands for the `Migration Operations`:
     PM> Install-Package System.Linq.Dynamic.Core -ProjectName Repositories
 ```
 
+## Used Packages for Hateoas
+- [Microsoft.AspNetCore.Mvc.Abstractions 2.2.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Abstractions)
+```
+    PM> Install-Package Microsoft.AspNetCore.Mvc.Abstractions -ProjectName Entities
+```
+
 ## Used Packages for PATCH Operation
 - [Microsoft.AspNetCore.Mvc.NewtonsoftJson 6.0.23](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/7.0.12)
 ```
