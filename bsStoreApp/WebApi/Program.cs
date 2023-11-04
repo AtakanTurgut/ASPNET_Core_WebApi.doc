@@ -1,3 +1,4 @@
+using AspNetCoreRateLimit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NLog;
@@ -63,6 +64,10 @@ builder.Services.ConfigureVersioning();     // Versioning
 builder.Services.ConfigureResponseCaching();    // Caching
 builder.Services.ConfigureHttpCacheHeaders();
 
+builder.Services.AddMemoryCache();  // Rate Limiting
+builder.Services.ConfigureRateLimitingOptions();
+builder.Services.AddHttpContextAccessor();
+
 var app = builder.Build();
 
 var logger = app.Services.GetRequiredService<ILoggerService>(); // Logger
@@ -81,6 +86,8 @@ if (app.Environment.IsProduction())   //
 }
 
 app.UseHttpsRedirection();
+
+app.UseIpRateLimiting();    // Rate Limiting
 
 app.UseCors("CorsPolicy");   // Pagination
 

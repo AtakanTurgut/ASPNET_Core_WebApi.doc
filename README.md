@@ -94,6 +94,12 @@ Use this commands for the `Migration Operations`:
     PM> Install-Package Marvin.Cache.Headers -ProjectName Presentation -Version 6.0.0
 ```
 
+## Used Packages for Rate Limiting
+- [AspNetCoreRateLimit 4.0.1](https://www.nuget.org/packages/AspNetCoreRateLimit)
+```
+    PM> Install-Package AspNetCoreRateLimit -ProjectName WebApi -Version 4.0.1
+```
+
 ## Used Packages for PATCH Operation
 - [Microsoft.AspNetCore.Mvc.NewtonsoftJson 6.0.23](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/7.0.12)
 ```
