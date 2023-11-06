@@ -13,11 +13,11 @@ namespace Presentation.Controllers
     [ApiController]
     [Route("api/books")]
     //[Route("api/{v:apiversion}/books")]
-    public class BooksV2Conroller : ControllerBase
+    public class BooksV2Controller : ControllerBase
     {
         private readonly IServiceManager _manager;
 
-        public BooksV2Conroller(IServiceManager manager)
+        public BooksV2Controller(IServiceManager manager)
         {
             _manager = manager;
         }

@@ -1,6 +1,8 @@
 ﻿using AspNetCoreRateLimit;
 using Entities.DataTransferObjects;
+using Entities.Models;
 using Marvin.Cache.Headers;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.AspNetCore.Mvc.Versioning;
@@ -111,7 +113,7 @@ namespace WebApi.Extensions
                 opt.Conventions.Controller<BooksController>()
                     .HasApiVersion(new ApiVersion(1, 0));
 
-                opt.Conventions.Controller<BooksV2Conroller>()
+                opt.Conventions.Controller<BooksV2Controller>()
                     .HasDeprecatedApiVersion(new ApiVersion(2, 0));
             });
         }
@@ -137,7 +139,7 @@ namespace WebApi.Extensions
                 new RateLimitRule()
                 {
                     Endpoint = "*",
-                    Limit = 3,      // 
+                    Limit = 100,      // 
                     Period = "1m"
                 }
             };
@@ -151,6 +153,22 @@ namespace WebApi.Extensions
             services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
             services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
             services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
+        }
+        
+        public static void ConfigureIdentity(this IServiceCollection services)
+        {
+            var builder = services.AddIdentity<User, IdentityRole>(opts =>
+            {
+                opts.Password.RequireDigit = true;      // 123456
+                opts.Password.RequireLowercase = false; // aa
+                opts.Password.RequireUppercase = false; // AA
+                opts.Password.RequireNonAlphanumeric = false;   
+                opts.Password.RequiredLength = 6;       // password >= 6
+
+                opts.User.RequireUniqueEmail = true;
+            })
+                .AddEntityFrameworkStores<RepositoryContext>()
+                .AddDefaultTokenProviders();
         }
 
     }

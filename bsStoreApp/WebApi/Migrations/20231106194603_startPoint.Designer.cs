@@ -11,7 +11,7 @@ using Repositories.EFCore;
 namespace WebApi.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20231023191835_startPoint")]
+    [Migration("20231106194603_startPoint")]
     partial class startPoint
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

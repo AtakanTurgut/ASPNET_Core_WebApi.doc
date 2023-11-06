@@ -1,0 +1,295 @@
+2023-11-06 20:04:45.2559 ERROR Something went wrong:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/books" for actions - Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation),Presentation.Controllers.BooksV2Conroller.GetAllBooksAsync (Presentation). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task).
+2023-11-06 20:05:05.7740 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-06T17:05:05.7710619Z"}
+2023-11-06 20:05:18.4532 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:05:18.453259Z"}
+2023-11-06 20:05:19.8749 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:05:19.8749803Z"}
+2023-11-06 20:05:38.9026 ERROR Something went wrong:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/books" for actions - Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation),Presentation.Controllers.BooksV2Conroller.GetAllBooksAsync (Presentation). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task).
+2023-11-06 20:06:31.0173 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:31.012803Z"}
+2023-11-06 20:06:32.4313 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:32.4313016Z"}
+2023-11-06 20:06:32.5745 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:32.5745184Z"}
+2023-11-06 20:06:32.6909 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:32.6908857Z"}
+2023-11-06 20:06:32.7874 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:32.7873749Z"}
+2023-11-06 20:06:32.8922 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:32.8921862Z"}
+2023-11-06 20:06:33.0154 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:33.0154788Z"}
+2023-11-06 20:06:33.1369 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:33.1369421Z"}
+2023-11-06 20:06:33.2178 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:33.2177986Z"}
+2023-11-06 20:06:33.3185 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:33.3185522Z"}
+2023-11-06 20:06:33.4013 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:33.4013191Z"}
+2023-11-06 20:06:33.4883 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:33.4883313Z"}
+2023-11-06 20:06:33.6000 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:33.6000083Z"}
+2023-11-06 20:06:33.7082 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:33.7082692Z"}
+2023-11-06 20:06:33.8007 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:33.8007263Z"}
+2023-11-06 20:06:33.8943 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:33.8943015Z"}
+2023-11-06 20:06:33.9989 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:33.9989057Z"}
+2023-11-06 20:06:34.1056 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:34.1056192Z"}
+2023-11-06 20:06:34.2021 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:34.2021454Z"}
+2023-11-06 20:06:34.3032 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:34.3031932Z"}
+2023-11-06 20:06:34.3983 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:34.3982968Z"}
+2023-11-06 20:06:34.4554 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:34.4554273Z"}
+2023-11-06 20:06:34.5428 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:34.5428294Z"}
+2023-11-06 20:06:34.6616 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:34.6616266Z"}
+2023-11-06 20:06:34.7552 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:34.7552663Z"}
+2023-11-06 20:06:34.8605 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:34.8605429Z"}
+2023-11-06 20:06:34.9461 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:34.9461383Z"}
+2023-11-06 20:06:35.0622 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:35.0621945Z"}
+2023-11-06 20:06:35.1588 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:35.1587911Z"}
+2023-11-06 20:06:35.2638 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:35.2638183Z"}
+2023-11-06 20:06:35.3752 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:35.3752052Z"}
+2023-11-06 20:06:35.4801 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:35.4800944Z"}
+2023-11-06 20:06:35.5753 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:35.5753704Z"}
+2023-11-06 20:06:35.6499 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:35.6499064Z"}
+2023-11-06 20:06:35.7416 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:35.7416355Z"}
+2023-11-06 20:06:35.8487 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:35.848758Z"}
+2023-11-06 20:06:35.9541 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:35.9540936Z"}
+2023-11-06 20:06:36.0468 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:36.0467862Z"}
+2023-11-06 20:06:36.1548 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:36.154795Z"}
+2023-11-06 20:06:36.2346 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:36.2346728Z"}
+2023-11-06 20:06:36.3234 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:36.3234395Z"}
+2023-11-06 20:06:36.4183 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:36.4183674Z"}
+2023-11-06 20:06:36.5239 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:36.5239241Z"}
+2023-11-06 20:06:36.5629 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:36.562947Z"}
+2023-11-06 20:06:36.6806 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:36.6806305Z"}
+2023-11-06 20:06:36.7747 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:36.7747191Z"}
+2023-11-06 20:06:36.8653 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:36.8653479Z"}
+2023-11-06 20:06:36.9705 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:36.970503Z"}
+2023-11-06 20:06:37.0804 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:37.0804208Z"}
+2023-11-06 20:06:37.1850 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:37.1850077Z"}
+2023-11-06 20:06:37.2637 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:37.2637706Z"}
+2023-11-06 20:06:37.3691 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:37.3691705Z"}
+2023-11-06 20:06:37.4649 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:37.4649185Z"}
+2023-11-06 20:06:37.5707 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:37.5707251Z"}
+2023-11-06 20:06:37.6612 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:37.6612268Z"}
+2023-11-06 20:06:37.7535 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:37.7535435Z"}
+2023-11-06 20:06:37.8614 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:37.861407Z"}
+2023-11-06 20:06:37.9699 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:37.9699688Z"}
+2023-11-06 20:06:38.0774 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:38.0774449Z"}
+2023-11-06 20:06:38.1735 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:06:38.1735203Z"}
+2023-11-06 20:07:01.2542 ERROR Something went wrong:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/books" for actions - Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation),Presentation.Controllers.BooksV2Conroller.GetAllBooksAsync (Presentation). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task).
+2023-11-06 20:07:08.9751 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-06T17:07:08.9723158Z"}
+2023-11-06 20:07:26.1144 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-06T17:07:26.1144138Z"}
+2023-11-06 20:07:30.3815 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-06T17:07:30.3814694Z"}
+2023-11-06 20:07:36.3607 INFO {"Id":"1","ModelName":"OnActionExecuting","Controller":"Books","Action":"DeleteOneBook","CreateAd":"2023-11-06T17:07:36.3606835Z"}
+2023-11-06 20:07:41.7347 INFO {"Id":"1","ModelName":"OnActionExecuting","Controller":"Books","Action":"UpdateOneBook","CreateAd":"2023-11-06T17:07:41.7347331Z"}
+2023-11-06 20:07:41.8784 ERROR Something went wrong:Entities.Exceptions.BookNotFoundException: The book with id: 1 could not found.
+   at Services.BookManager.GetOneBookByIdAndCheckExists(Int32 id, Boolean trackChanges) in C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\Services\BookManager.cs:line 120
+   at Services.BookManager.UpdateOneBookAsync(Int32 id, BookDtoForUpdate bookDto, Boolean trackChanges) in C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\Services\BookManager.cs:line 102
+   at Presentation.Controllers.BooksController.UpdateOneBookAsync(Int32 id, BookDtoForUpdate bookDto) in C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\Presentation\Controllers\BooksController.cs:line 85
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 123
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task).
+2023-11-06 20:08:18.6287 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-06T17:08:18.6287141Z"}
+2023-11-06 20:08:23.5723 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-06T17:08:23.5723354Z"}
+2023-11-06 20:08:28.2298 INFO {"Id":"1","ModelName":"OnActionExecuting","Controller":"Books","Action":"UpdateOneBook","CreateAd":"2023-11-06T17:08:28.2298667Z"}
+2023-11-06 20:08:28.3055 ERROR Something went wrong:Entities.Exceptions.BookNotFoundException: The book with id: 1 could not found.
+   at Services.BookManager.GetOneBookByIdAndCheckExists(Int32 id, Boolean trackChanges) in C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\Services\BookManager.cs:line 120
+   at Services.BookManager.UpdateOneBookAsync(Int32 id, BookDtoForUpdate bookDto, Boolean trackChanges) in C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\Services\BookManager.cs:line 102
+   at Presentation.Controllers.BooksController.UpdateOneBookAsync(Int32 id, BookDtoForUpdate bookDto) in C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\Presentation\Controllers\BooksController.cs:line 85
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 123
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task).
+2023-11-06 20:08:49.5421 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"UpdateOneBook","CreateAd":"2023-11-06T17:08:49.5421308Z"}
+2023-11-06 20:09:02.6017 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:09:02.6017136Z"}
+2023-11-06 20:09:09.4629 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"PartiallyUpdateOneBook","CreateAd":"2023-11-06T17:09:09.4628957Z"}
+2023-11-06 20:09:20.6222 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetBooksOptions","CreateAd":"2023-11-06T17:09:20.6222602Z"}
+2023-11-06 20:09:24.3621 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-06T17:09:24.3620972Z"}
+2023-11-06 20:09:29.9753 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"PartiallyUpdateOneBook","CreateAd":"2023-11-06T17:09:29.975335Z"}
+2023-11-06 20:09:40.5103 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"UpdateOneBook","CreateAd":"2023-11-06T17:09:40.5103201Z"}
+2023-11-06 20:09:48.1678 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:09:48.1678662Z"}
+2023-11-06 20:09:51.1388 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"GetOneBook","CreateAd":"2023-11-06T17:09:51.1388347Z"}
+2023-11-06 20:09:55.4190 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"UpdateOneBook","CreateAd":"2023-11-06T17:09:55.4190229Z"}
+2023-11-06 20:10:26.3175 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"GetOneBook","CreateAd":"2023-11-06T17:10:26.3174799Z"}
+2023-11-06 20:10:29.9912 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"PartiallyUpdateOneBook","CreateAd":"2023-11-06T17:10:29.991265Z"}
+2023-11-06 20:10:48.4711 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"PartiallyUpdateOneBook","CreateAd":"2023-11-06T17:10:48.4710825Z"}
+2023-11-06 20:10:59.5678 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"PartiallyUpdateOneBook","CreateAd":"2023-11-06T17:10:59.5678375Z"}
+2023-11-06 20:11:07.5550 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"PartiallyUpdateOneBook","CreateAd":"2023-11-06T17:11:07.5550425Z"}
+2023-11-06 20:11:16.5771 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"DeleteOneBook","CreateAd":"2023-11-06T17:11:16.5771479Z"}
+2023-11-06 20:11:24.2405 INFO {"Id":"5","ModelName":"OnActionExecuting","Controller":"Books","Action":"GetOneBook","CreateAd":"2023-11-06T17:11:24.2404994Z"}
+2023-11-06 20:11:24.3211 ERROR Something went wrong:Entities.Exceptions.BookNotFoundException: The book with id: 5 could not found.
+   at Services.BookManager.GetOneBookByIdAndCheckExists(Int32 id, Boolean trackChanges) in C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\Services\BookManager.cs:line 120
+   at Services.BookManager.GetOneBookByIdAsync(Int32 id, Boolean trackChanges) in C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\Services\BookManager.cs:line 80
+   at Presentation.Controllers.BooksController.GetOneBookAsync(Int32 id) in C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\Presentation\Controllers\BooksController.cs:line 65
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 123
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task).
+2023-11-06 20:11:45.6098 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T17:11:45.6098318Z"}
+2023-11-06 20:11:48.8348 INFO {"Id":"2","ModelName":"OnActionExecuting","Controller":"Books","Action":"UpdateOneBook","CreateAd":"2023-11-06T17:11:48.8347964Z"}
+2023-11-06 20:11:53.4805 INFO {"Id":"2","ModelName":"OnActionExecuting","Controller":"Books","Action":"GetOneBook","CreateAd":"2023-11-06T17:11:53.4805492Z"}
+2023-11-06 20:11:57.4362 INFO {"Id":"2","ModelName":"OnActionExecuting","Controller":"Books","Action":"UpdateOneBook","CreateAd":"2023-11-06T17:11:57.4361878Z"}
+2023-11-06 20:12:00.7830 INFO {"Id":"2","ModelName":"OnActionExecuting","Controller":"Books","Action":"GetOneBook","CreateAd":"2023-11-06T17:12:00.7830088Z"}
+2023-11-06 22:46:38.4271 ERROR Something went wrong:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/books" for actions - Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation),Presentation.Controllers.BooksV2Conroller.GetAllBooksAsync (Presentation). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task).
+2023-11-06 22:46:54.7888 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-06T19:46:54.7844436Z"}
+2023-11-06 22:47:16.4165 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:16.4165329Z"}
+2023-11-06 22:47:16.8049 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:16.804927Z"}
+2023-11-06 22:47:16.9244 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:16.9244015Z"}
+2023-11-06 22:47:17.0314 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:17.0313848Z"}
+2023-11-06 22:47:17.1397 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:17.1397092Z"}
+2023-11-06 22:47:17.2298 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:17.2297928Z"}
+2023-11-06 22:47:17.3254 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:17.3254561Z"}
+2023-11-06 22:47:17.4302 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:17.4302722Z"}
+2023-11-06 22:47:17.5233 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:17.5233399Z"}
+2023-11-06 22:47:17.6317 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:17.6317575Z"}
+2023-11-06 22:47:17.7223 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:17.7223172Z"}
+2023-11-06 22:47:17.8139 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:17.813955Z"}
+2023-11-06 22:47:17.9238 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:17.9237886Z"}
+2023-11-06 22:47:18.0015 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:18.0015286Z"}
+2023-11-06 22:47:18.1091 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:18.1090876Z"}
+2023-11-06 22:47:18.1999 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:18.1999747Z"}
+2023-11-06 22:47:18.2489 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:18.2489345Z"}
+2023-11-06 22:47:18.3073 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:18.3073419Z"}
+2023-11-06 22:47:18.4122 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:18.4122077Z"}
+2023-11-06 22:47:18.5223 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:18.5223341Z"}
+2023-11-06 22:47:18.6163 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:18.6163264Z"}
+2023-11-06 22:47:18.7266 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:18.7266631Z"}
+2023-11-06 22:47:18.8023 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:18.8022958Z"}
+2023-11-06 22:47:18.9116 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:18.9116116Z"}
+2023-11-06 22:47:19.0058 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:19.0058311Z"}
+2023-11-06 22:47:19.0973 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:19.0973291Z"}
+2023-11-06 22:47:19.1892 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:19.1892518Z"}
+2023-11-06 22:47:19.2826 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:19.2826702Z"}
+2023-11-06 22:47:19.3929 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:19.3928893Z"}
+2023-11-06 22:47:19.4845 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:19.4845759Z"}
+2023-11-06 22:47:19.5643 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:19.5642961Z"}
+2023-11-06 22:47:19.6664 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:19.6664158Z"}
+2023-11-06 22:47:19.7586 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:19.7586431Z"}
+2023-11-06 22:47:19.8528 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:19.8528707Z"}
+2023-11-06 22:47:19.9463 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:19.9463293Z"}
+2023-11-06 22:47:20.0527 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:20.0527264Z"}
+2023-11-06 22:47:20.1635 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:20.16355Z"}
+2023-11-06 22:47:20.2514 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:20.2513909Z"}
+2023-11-06 22:47:20.3620 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:20.3620177Z"}
+2023-11-06 22:47:20.4543 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:20.4543185Z"}
+2023-11-06 22:47:20.5477 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:20.547689Z"}
+2023-11-06 22:47:20.6561 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:20.656093Z"}
+2023-11-06 22:47:20.7645 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:20.7645319Z"}
+2023-11-06 22:47:20.8569 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:20.8569215Z"}
+2023-11-06 22:47:20.9512 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:20.9511943Z"}
+2023-11-06 22:47:21.0331 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:21.0331034Z"}
+2023-11-06 22:47:21.1347 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:21.1347093Z"}
+2023-11-06 22:47:21.2469 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:21.246927Z"}
+2023-11-06 22:47:21.3526 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:21.3526082Z"}
+2023-11-06 22:47:21.4453 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:21.44538Z"}
+2023-11-06 22:47:21.5542 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:21.5542089Z"}
+2023-11-06 22:47:21.6626 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:21.6626035Z"}
+2023-11-06 22:47:21.7546 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:21.7546228Z"}
+2023-11-06 22:47:21.8610 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:21.8610391Z"}
+2023-11-06 22:47:21.9562 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:21.9562486Z"}
+2023-11-06 22:47:22.0626 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:22.0626536Z"}
+2023-11-06 22:47:22.1700 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:22.1700094Z"}
+2023-11-06 22:47:22.2614 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:22.261462Z"}
+2023-11-06 22:47:22.3674 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:22.3674274Z"}
+2023-11-06 22:47:22.4485 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:22.4485416Z"}
+2023-11-06 22:47:25.1752 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:25.1752313Z"}
+2023-11-06 22:47:25.2805 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:25.280562Z"}
+2023-11-06 22:47:25.3739 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:25.3739681Z"}
+2023-11-06 22:47:25.4837 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:25.4836983Z"}
+2023-11-06 22:47:25.5718 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:25.571847Z"}
+2023-11-06 22:47:25.6642 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:25.6642071Z"}
+2023-11-06 22:47:25.7710 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:25.7710682Z"}
+2023-11-06 22:47:25.8777 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:25.877707Z"}
+2023-11-06 22:47:25.9707 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:25.9707762Z"}
+2023-11-06 22:47:26.0782 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:26.0782643Z"}
+2023-11-06 22:47:26.1848 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:26.1848555Z"}
+2023-11-06 22:47:26.2943 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:26.2943688Z"}
+2023-11-06 22:47:26.3861 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:26.3861326Z"}
+2023-11-06 22:47:26.4778 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:26.4778524Z"}
+2023-11-06 22:47:26.5426 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:26.5426175Z"}
+2023-11-06 22:47:26.6309 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:26.630912Z"}
+2023-11-06 22:47:26.7251 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:26.7251027Z"}
+2023-11-06 22:47:26.8304 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:26.8303837Z"}
+2023-11-06 22:47:26.9219 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:26.9219098Z"}
+2023-11-06 22:47:27.0127 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:27.0127565Z"}
+2023-11-06 22:47:27.1072 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:27.1072491Z"}
+2023-11-06 22:47:27.2000 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:27.2000442Z"}
+2023-11-06 22:47:27.2802 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:27.2801937Z"}
+2023-11-06 22:47:27.3908 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:27.3908805Z"}
+2023-11-06 22:47:27.4942 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:27.4942362Z"}
+2023-11-06 22:47:27.5898 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:27.5898804Z"}
+2023-11-06 22:47:27.6831 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:27.6831441Z"}
+2023-11-06 22:47:27.7812 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:27.7812011Z"}
+2023-11-06 22:47:27.8854 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:27.8854524Z"}
+2023-11-06 22:47:27.9782 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:27.9782809Z"}
+2023-11-06 22:47:28.0835 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:28.0835055Z"}
+2023-11-06 22:47:28.1916 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:28.1916407Z"}
+2023-11-06 22:47:28.2987 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:28.2987047Z"}
+2023-11-06 22:47:28.3946 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:28.3946092Z"}
+2023-11-06 22:47:28.5005 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:28.5005199Z"}
+2023-11-06 22:47:28.6108 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:28.6107903Z"}
+2023-11-06 22:47:28.7188 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:28.7188034Z"}
+2023-11-06 22:47:28.8085 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:28.8085724Z"}
+2023-11-06 22:47:28.9149 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"CreateOneBook","CreateAd":"2023-11-06T19:47:28.9149173Z"}
+2023-11-06 23:49:29.7143 ERROR Something went wrong:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/books" for actions - Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation),Presentation.Controllers.BooksV2Controller.GetAllBooksAsync (Presentation). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task).
+2023-11-06 23:54:06.1691 ERROR Something went wrong:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/books" for actions - Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation),Presentation.Controllers.BooksV2Controller.GetAllBooksAsync (Presentation). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task).
