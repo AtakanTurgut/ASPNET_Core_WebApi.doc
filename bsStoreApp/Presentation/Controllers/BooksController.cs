@@ -3,6 +3,7 @@ using Entities.Exceptions;
 using Entities.Models;
 using Entities.RequestFeatures;
 using Marvin.Cache.Headers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using NLog.Filters;
@@ -37,6 +38,7 @@ namespace Presentation.Controllers
 
         // GET
         // HEAD
+        [Authorize]
         [HttpGet(Name = "GetAllBooksAsync")]
         [HttpHead]
         [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
@@ -58,6 +60,7 @@ namespace Presentation.Controllers
                 Ok(result.linkResponse.ShapedEntities);
         }
 
+        [Authorize]
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetOneBookAsync([FromRoute(Name = "id")] int id)
         {
@@ -68,6 +71,7 @@ namespace Presentation.Controllers
         }
 
         // POST
+        [Authorize(Roles = "Admin")]
         [HttpPost(Name = "CreateOneBookAsync")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<IActionResult> CreateOneBookAsync([FromBody] BookDtoForInsertion bookDto)
@@ -78,6 +82,7 @@ namespace Presentation.Controllers
         }
 
         // PUT
+        [Authorize(Roles = "Admin, Editor")]
         [HttpPut("{id:int}")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]      // (..., Order = )
         public async Task<IActionResult> UpdateOneBookAsync([FromRoute(Name = "id")] int id, [FromBody] BookDtoForUpdate bookDto)
@@ -88,6 +93,7 @@ namespace Presentation.Controllers
         }
 
         // DELETE
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteOneBookAsync([FromRoute(Name = "id")] int id)
         {
@@ -97,6 +103,7 @@ namespace Presentation.Controllers
         }
 
         // PATCH
+        [Authorize(Roles = "Admin, Editor")]
         [HttpPatch("{id:int}")]
         public async Task<IActionResult> PartiallyUpdateOneBookAsync([FromRoute(Name = "id")] int id,
             [FromBody] JsonPatchDocument<BookDtoForUpdate> bookPatch)
@@ -119,6 +126,7 @@ namespace Presentation.Controllers
         }
 
         // OPTIONS
+        [Authorize]
         [HttpOptions]
         public IActionResult GetBooksOptions()
         {

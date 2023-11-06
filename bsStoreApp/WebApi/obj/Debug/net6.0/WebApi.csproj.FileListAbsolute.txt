@@ -339,3 +339,4 @@ C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\WebApi\obj\Debug\
 C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\WebApi\obj\Debug\net6.0\ref\WebApi.dll
 C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Excalibur\Desktop\clone\ASPNET_Core_WebApi\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
