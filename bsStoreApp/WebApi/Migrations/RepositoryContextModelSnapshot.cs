@@ -110,6 +110,12 @@ namespace WebApi.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RefreshTokenExpiryTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -162,22 +168,22 @@ namespace WebApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "229010ac-200a-4459-b7f7-95ead9f0b03d",
-                            ConcurrencyStamp = "a34fe103-cd79-4bc3-8429-21c3804c2784",
+                            Id = "8a983994-576d-48e0-a2c4-08d306314de1",
+                            ConcurrencyStamp = "b421547d-7ce1-4c19-bdc8-2dc2553c17ec",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "673fa485-c6fe-4593-8965-9507f1bd5008",
-                            ConcurrencyStamp = "1569ffee-dbb8-4ba7-a261-25b9f5d1c06f",
+                            Id = "81df00c5-7e90-46f6-985d-754cf7dfb6ba",
+                            ConcurrencyStamp = "e871556c-faae-4af1-ba54-244113ea255d",
                             Name = "Editor",
                             NormalizedName = "EDITOR"
                         },
                         new
                         {
-                            Id = "e5f6ee72-9ed8-476f-a79a-b2942796543c",
-                            ConcurrencyStamp = "8838a255-9370-42c7-9565-978ce2977c03",
+                            Id = "ffcdd37b-0690-4944-a82f-b1c39a01bbe9",
+                            ConcurrencyStamp = "d3dabb41-38e1-4d96-a50d-4a53052cf0e9",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
