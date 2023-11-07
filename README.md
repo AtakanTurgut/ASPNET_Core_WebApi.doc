@@ -100,6 +100,20 @@ Use this commands for the `Migration Operations`:
     PM> Install-Package AspNetCoreRateLimit -ProjectName WebApi -Version 4.0.1
 ```
 
+## Used Packages for Authentication and Authorization - Security
+- [Microsoft.AspNetCore.Identity.EntityFrameworkCore 6.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Identity.EntityFrameworkCore)
+```
+    PM> Install-Package Microsoft.AspNetCore.Identity.EntityFrameworkCore -ProjectName Entities 6.0.0
+```
+- [Microsoft.AspNetCore.Authentication.JwtBearer 6.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer)
+```
+    PM> Install-Package Microsoft.AspNetCore.Authentication.JwtBearer -ProjectName WebApi -Version 6.0.0
+```
+- [System.IdentityModel.Tokens.Jwt 6.14.1](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt)
+```
+    PM> Install-Package System.IdentityModel.Tokens.Jwt -ProjectName Services -Version 6.14.1
+```
+
 ## Used Packages for PATCH Operation
 - [Microsoft.AspNetCore.Mvc.NewtonsoftJson 6.0.23](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/7.0.12)
 ```

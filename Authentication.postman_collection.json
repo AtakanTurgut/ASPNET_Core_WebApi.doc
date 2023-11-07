@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "7881b603-1285-4191-9e75-077ef2000ec5",
+		"name": "Authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27907837",
+		"_collection_link": "https://solar-firefly-811735.postman.co/workspace/ASP.NET-Core-Web-API~9ce5536b-0785-414d-ab97-5f2f9d772300/collection/27907837-7881b603-1285-4191-9e75-077ef2000ec5?action=share&source=collection_link&creator=27907837"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "/*\r\n{\r\n    \"firstName\":\"Admin\",\r\n    \"lastName\":\"Admin\",\r\n    \"userName\":\"Admin\",\r\n    \"password\":\"admin123456\",\r\n    \"email\":\"admin@admin.net\",\r\n    \"phoneNumber\":\"5430000000\",\r\n    \"roles\":[\r\n        \"Admin\"\r\n    ]\r\n}\r\n*//*\r\n{\r\n    \"firstName\":\"User\",\r\n    \"lastName\":\"User\",\r\n    \"userName\":\"User\",\r\n    \"password\":\"user123456\",\r\n    \"email\":\"user@user.net\",\r\n    \"phoneNumber\":\"5430000000\",\r\n    \"roles\":[\r\n        \"User\"\r\n    ]\r\n}\r\n*//*\r\n{\r\n    \"firstName\":\"Editor\",\r\n    \"lastName\":\"Editor\",\r\n    \"userName\":\"Editor\",\r\n    \"password\":\"editor123456\",\r\n    \"email\":\"editor@editor.net\",\r\n    \"phoneNumber\":\"5430000000\",\r\n    \"roles\":[\r\n        \"Editor\"\r\n    ]\r\n}\r\n*/",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/authentication",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"/*\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"    const response = pm.response.json();\r",
+							"    let token = response.token;\r",
+							"    pm.globals.set(\"accessToken\", token)\r",
+							"});\r",
+							"*/\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Access Token Test\", () => {\r",
+							"       const response = pm.response.json();\r",
+							"    let token = response.accessToken;\r",
+							"    pm.globals.set(\"accessToken\", token);\r",
+							"\r",
+							"    pm.expect(pm.globals.get(\"accessToken\")).eql(response.accessToken);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "//  Admin\r\n\r\n{\r\n    \"userName\":\"Admin\",\r\n    \"password\":\"admin123456\"\r\n}\r\n\r\n// User\r\n/*\r\n{\r\n    \"userName\":\"User\",\r\n    \"password\":\"user123456\"\r\n}\r\n*/\r\n// Editor \r\n/*\r\n{\r\n    \"userName\":\"Editor\",\r\n    \"password\":\"editor123456\"\r\n}\r\n*/",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/authentication/login",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"authentication",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Access Token Test\", () => {\r",
+							"       const response = pm.response.json();\r",
+							"    let token = response.accessToken;\r",
+							"    pm.globals.set(\"accessToken\", token);\r",
+							"\r",
+							"    pm.expect(pm.globals.get(\"accessToken\")).eql(response.accessToken);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTY5OTM1NjkwNSwiaXNzIjoiYnNzdG9yZWFwaSIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjcxNDUifQ.6y_idQjVIz4_bQD2Mc_zVxpD_v3-7XIaxEla1oriA3M\",\r\n    \"refreshToken\": \"5qRd6BAkJgh5hi57PilX3SZs3h19MyQrleNabVJrvuA=\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/authentication/refresh",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"authentication",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
