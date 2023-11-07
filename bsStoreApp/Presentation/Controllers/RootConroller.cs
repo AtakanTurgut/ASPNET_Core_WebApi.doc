@@ -11,6 +11,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("api")]
+    [ApiExplorerSettings(GroupName = "v1")] // Swagger  -  Documenting
     public class RootConroller : ControllerBase
     {
         private readonly LinkGenerator _linkGenerator;

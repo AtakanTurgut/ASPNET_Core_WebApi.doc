@@ -33,7 +33,8 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 });  // Validation
 
 builder.Services.AddEndpointsApiExplorer();     // Swagger
-builder.Services.AddSwaggerGen();
+//builder.Services.AddSwaggerGen();
+builder.Services.ConfigureSwagger();    // Documenting
 
 // DBContext  - Register //
 /*
@@ -78,10 +79,14 @@ var logger = app.Services.GetRequiredService<ILoggerService>(); // Logger
 app.ConfigureExceptionHandler(logger);
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())    // Swagger  -  Documenting
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(s =>
+    {
+        s.SwaggerEndpoint("/swagger/v1/swagger.json", "bsStoreApp v1");
+        s.SwaggerEndpoint("/swagger/v2/swagger.json", "bsStoreApp v2");
+    });
 }
 
 if (app.Environment.IsProduction())   //

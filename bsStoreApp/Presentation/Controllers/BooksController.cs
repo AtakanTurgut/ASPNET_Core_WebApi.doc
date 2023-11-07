@@ -26,6 +26,7 @@ namespace Presentation.Controllers
     [ServiceFilter(typeof(LogFilterAttribute))]
     //[ResponseCache(CacheProfileName = "5mins")]     // Cacheable
     //[HttpCacheExpiration(CacheLocation = CacheLocation.Public, MaxAge = 80)]
+    [ApiExplorerSettings(GroupName = "v1")] // Swagger  -  Documenting
     public class BooksController : ControllerBase
     {
         // Resolve

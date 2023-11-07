@@ -13,6 +13,7 @@ namespace Presentation.Controllers
     [ApiController]
     [Route("api/books")]
     //[Route("api/{v:apiversion}/books")]
+    [ApiExplorerSettings(GroupName = "v2")] // Swagger  -  Documenting
     public class BooksV2Controller : ControllerBase
     {
         private readonly IServiceManager _manager;

@@ -5,6 +5,10 @@
     Presentation => Services
     WebApi       => Entities + Repositories + Services + Presentation
 
+### bsStoreApp REST API Documentation
+[Postman Authentication Documentation](https://documenter.getpostman.com/view/27907837/2s9YXh4hAJ)
+[Postman Books Documentation](https://documenter.getpostman.com/view/27907837/2s9YXh4hAH)
+
 ## Used Packages for Database Context
 
 - Packages can be installed from the "[NuGet Gallery](https://www.nuget.org/packages/Microsoft.AspNet.Identity.Core)" with the help of the `Tools > NuGet Package Manager > Package Manager Console`.
