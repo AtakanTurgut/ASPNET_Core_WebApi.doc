@@ -1,0 +1,3 @@
+2023-11-02 22:27:41.9666 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-02T19:27:41.9413766Z"}
+2023-11-02 22:28:25.7373 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-02T19:28:25.7373373Z"}
+2023-11-02 22:28:39.4176 INFO {"Id":null,"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","CreateAd":"2023-11-02T19:28:39.417431Z"}
