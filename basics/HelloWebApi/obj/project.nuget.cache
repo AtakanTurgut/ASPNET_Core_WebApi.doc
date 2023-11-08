@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "yuTJ+zNvMazhON4lzsTScN/LoT9ZV2kSPq2bVnsmkhEpHcE8iB/NRCCqBZ1Pu5uykAdwCEtO42sBXD3WE0zMcA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\ASPNET_Core_WebApi\\basics\\HelloWebApi\\HelloWebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Excalibur\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\Excalibur\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
