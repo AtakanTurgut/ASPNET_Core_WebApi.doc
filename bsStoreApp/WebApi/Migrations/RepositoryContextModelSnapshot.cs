@@ -30,6 +30,9 @@ namespace WebApi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
@@ -39,24 +42,29 @@ namespace WebApi.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Books");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
+                            CategoryId = 1,
                             Price = 120m,
                             Title = "ASP.NET Framework"
                         },
                         new
                         {
                             Id = 2,
+                            CategoryId = 1,
                             Price = 150m,
                             Title = "MVC Pattern"
                         },
                         new
                         {
                             Id = 3,
+                            CategoryId = 2,
                             Price = 65m,
                             Title = "Javascript"
                         });
@@ -202,22 +210,22 @@ namespace WebApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "bddb1072-b117-4e25-9565-54296566cb17",
-                            ConcurrencyStamp = "66c39fc1-26aa-4f59-a886-f817e7adac2b",
+                            Id = "398459c8-d989-4a95-8feb-001bbb54bc2a",
+                            ConcurrencyStamp = "03fb316c-4790-481f-92da-a48fa16b31c9",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "64b9fafb-42e4-4170-a70d-ae52dd838d59",
-                            ConcurrencyStamp = "88915bec-4777-4c31-93c1-e74f3f1a8edc",
+                            Id = "bd510ac3-95bb-4cb8-a03d-a867bae0ce99",
+                            ConcurrencyStamp = "83b28c5c-b40e-4d54-8c85-303ff0658b71",
                             Name = "Editor",
                             NormalizedName = "EDITOR"
                         },
                         new
                         {
-                            Id = "83c9a4f1-485d-4fe3-bd76-eddedf85c27e",
-                            ConcurrencyStamp = "57ed344c-44da-48f3-a147-3fe59bd527fb",
+                            Id = "85eff98a-4b8d-4051-b68f-f043bbf60831",
+                            ConcurrencyStamp = "49ac55e9-0bf8-4171-9e24-a7a9b4ffc27c",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -329,6 +337,17 @@ namespace WebApi.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Entities.Models.Book", b =>
+                {
+                    b.HasOne("Entities.Models.Category", "Category")
+                        .WithMany("Books")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -378,6 +397,11 @@ namespace WebApi.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Entities.Models.Category", b =>
+                {
+                    b.Navigation("Books");
                 });
 #pragma warning restore 612, 618
         }

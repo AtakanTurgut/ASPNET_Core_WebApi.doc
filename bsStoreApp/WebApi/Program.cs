@@ -7,6 +7,7 @@ using Repositories.EFCore;
 using Services;
 using Services.Contracts;
 using WebApi.Extensions;
+using Newtonsoft.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,8 +23,8 @@ builder.Services.AddControllers(config =>
 })
     .AddXmlDataContractSerializerFormatters()       // Content Negotiation
     .AddCustomCsvFormatter()
-    .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);    //
-    //.AddNewtonsoftJson();
+    .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)    //
+    .AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
 
 //builder.Services.AddScoped<ValidationFilterAttribute>();    // Action Filters  --  IoC
 
@@ -72,6 +73,9 @@ builder.Services.AddHttpContextAccessor();
 //builder.Services.AddAuthentication();   // Security
 builder.Services.ConfigureIdentity();
 builder.Services.ConfigureJwt(builder.Configuration);
+
+builder.Services.RegisterRepositories();    // b
+builder.Services.RegisterServices();
 
 var app = builder.Build();
 

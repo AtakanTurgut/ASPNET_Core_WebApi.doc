@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "ae059366-c83b-4d4e-b788-84b986354ed5",
 		"name": "Books",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "27907837",
 		"_collection_link": "https://solar-firefly-811735.postman.co/workspace/ASP.NET-Core-Web-API~9ce5536b-0785-414d-ab97-5f2f9d772300/collection/27907837-ae059366-c83b-4d4e-b788-84b986354ed5?action=share&source=collection_link&creator=27907837"
 	},
@@ -54,7 +54,16 @@
 						"disabled": true
 					}
 				],
-				"url": "{{baseUrl}}/api/books"
+				"url": {
+					"raw": "{{baseUrl}}/api/books",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
 			},
 			"response": []
 		},
@@ -106,7 +115,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/api/books?pageNumber=11&pageSize=10",
+					"raw": "{{baseUrl}}/api/books?pageNumber=1&pageSize=10",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -117,7 +126,7 @@
 					"query": [
 						{
 							"key": "pageNumber",
-							"value": "11",
+							"value": "1",
 							"description": "2"
 						},
 						{
@@ -125,6 +134,67 @@
 							"value": "10",
 							"description": "3"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Books with Details",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status is 200\", function() {\r",
+							"    pm.response.to.have.status(200)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/csv",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "text/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/books/details",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"details"
 					]
 				}
 			},
@@ -871,7 +941,17 @@
 						"type": "text"
 					}
 				],
-				"url": "{{baseUrl}}/api/books/{{bookId}}"
+				"url": {
+					"raw": "{{baseUrl}}/api/books/{{bookId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"{{bookId}}"
+					]
+				}
 			},
 			"response": []
 		},
@@ -893,7 +973,17 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{baseUrl}}/api/books/10000"
+				"url": {
+					"raw": "{{baseUrl}}/api/books/10000",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"10000"
+					]
+				}
 			},
 			"response": []
 		},
@@ -915,7 +1005,17 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "{{baseUrl}}/api/books/{{bookId}}"
+				"url": {
+					"raw": "{{baseUrl}}/api/books/{{bookId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"{{bookId}}"
+					]
+				}
 			},
 			"response": []
 		},
@@ -937,7 +1037,17 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "{{baseUrl}}/api/books/1000"
+				"url": {
+					"raw": "{{baseUrl}}/api/books/1000",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"1000"
+					]
+				}
 			},
 			"response": []
 		},
@@ -972,14 +1082,23 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "/*\r\n{\r\n    \"title\": \"ASP.NET Core MVC\",\r\n    \"price\": 200\r\n}\r\n*/\r\n\r\n{\r\n    \"title\": \"{{$randomWords}}\",\r\n    \"price\": {{$randomPrice}}\r\n}",
+					"raw": "/*\r\n{\r\n    \"title\": \"ASP.NET Core MVC\",\r\n    \"price\": 200\r\n}\r\n*/\r\n\r\n{\r\n    \"title\": \"{{$randomWords}}\",\r\n    \"price\": {{$randomPrice}},\r\n    \"categoryId\": 2\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{baseUrl}}/api/books"
+				"url": {
+					"raw": "{{baseUrl}}/api/books",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
 			},
 			"response": []
 		},
@@ -1021,7 +1140,16 @@
 						}
 					}
 				},
-				"url": "{{baseUrl}}/api/books"
+				"url": {
+					"raw": "{{baseUrl}}/api/books",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
 			},
 			"response": []
 		},
@@ -1032,8 +1160,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -1052,7 +1180,17 @@
 						}
 					}
 				},
-				"url": "{{baseUrl}}/api/books/{{bookId}}"
+				"url": {
+					"raw": "{{baseUrl}}/api/books/{{bookId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"{{bookId}}"
+					]
+				}
 			},
 			"response": []
 		},
@@ -1094,7 +1232,17 @@
 						}
 					}
 				},
-				"url": "{{baseUrl}}/api/books/{{bookId}}"
+				"url": {
+					"raw": "{{baseUrl}}/api/books/{{bookId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"{{bookId}}"
+					]
+				}
 			},
 			"response": []
 		},
@@ -1118,14 +1266,24 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "/*\r\n[\r\n  {\r\n    \"op\":\"replace\",\r\n    \"path\": \"title\",\r\n    \"value\": \"Javascript\"\r\n  }\r\n]\r\n*/\r\n\r\n[\r\n  {\r\n    \"op\":\"replace\",\r\n    \"path\": \"title\",\r\n    \"value\": \"{{$randomWords}}\"\r\n  }\r\n]",
+					"raw": "/*\r\n[\r\n  {\r\n    \"op\": \"replace\",\r\n    \"path\": \"title\",\r\n    \"value\": \"Javascript\"\r\n  }\r\n]\r\n*/\r\n\r\n[\r\n  {\r\n    \"op\": \"replace\",\r\n    \"path\": \"title\",\r\n    \"value\": \"{{$randomWords}}\"\r\n  }\r\n]",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{baseUrl}}/api/books/{{bookId}}"
+				"url": {
+					"raw": "{{baseUrl}}/api/books/{{bookId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"{{bookId}}"
+					]
+				}
 			},
 			"response": []
 		},
@@ -1167,7 +1325,17 @@
 						}
 					}
 				},
-				"url": "{{baseUrl}}/api/books/{{bookId}}"
+				"url": {
+					"raw": "{{baseUrl}}/api/books/{{bookId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"{{bookId}}"
+					]
+				}
 			},
 			"response": []
 		},
@@ -1218,7 +1386,16 @@
 						"disabled": true
 					}
 				],
-				"url": "{{baseUrl}}/api/books"
+				"url": {
+					"raw": "{{baseUrl}}/api/books",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
 			},
 			"response": []
 		},
@@ -1295,6 +1472,16 @@
 			"response": []
 		}
 	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{accessToken}}",
+				"type": "string"
+			}
+		]
+	},
 	"event": [
 		{
 			"listen": "prerequest",
@@ -1318,7 +1505,7 @@
 	"variable": [
 		{
 			"key": "bookId",
-			"value": "1"
+			"value": "2"
 		}
 	]
 }
